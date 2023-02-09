@@ -5,6 +5,7 @@ source $HOME/.config/nvim/plug-config/coc.vim
 
 set encoding=utf-8
 let g:airline_powerline_fonts = 1
+let g:coc_disable_startup_warning = 1 " Keep coc from warning us about version
 set guifont=DroidSansMono\ Nerd\ Font:h11
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 

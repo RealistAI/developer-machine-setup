@@ -1,6 +1,6 @@
 echo "Copying config files"
 mkdir -p $HOME/.config/nvim
-cp -r ./config/nvim/ ~/.config/nvim
+cp -r ./config/nvim/* ~/.config/nvim
 
 # Install nodejs which is required for Coc
 echo "#######################################################"
