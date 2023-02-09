@@ -24,3 +24,6 @@ echo "# Executing PlugInstall to install all the plugins    #"
 echo "#######################################################"
 # Install all of the plugins
 nvim -es -u ~/.config/nvim/init.vim -i NONE -c "PlugInstall" -c "qa"
+
+# Install all of the COC requirements
+nvim -es -u ~/.config/nvim/init.vim -i NONE -c "CocInstall coc-pyright" -c "qa"

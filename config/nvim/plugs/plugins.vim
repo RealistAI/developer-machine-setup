@@ -3,7 +3,7 @@ call plug#begin('~/.vim/bundle')
 
 " Declare the list of plugins.
  Plug 'dracula/vim'
-" Plug 'SirVer/ultisnips'
+ Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
  Plug 'scrooloose/nerdtree'
 " Plug 'preservim/nerdcommenter'
