@@ -1,5 +1,5 @@
 echo "Copying config files"
-cp -r ./config/* ~/.config
+cp -r ./config/* ~/.config/
 
 echo "#######################################################"
 echo "# Installing the vim plugin manager                   #"
