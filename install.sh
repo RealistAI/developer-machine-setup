@@ -22,6 +22,4 @@ echo "#######################################################"
 echo "# Executing PlugInstall to install all the plugins    #"
 echo "#######################################################"
 # Install all of the plugins
-nvim --headless +PlugInstall +qall
-nvim --headless +qall
-
+nvim -es -u ~/.config/nvim/init.vim -i NONE -c "PlugInstall" -c "qa"
