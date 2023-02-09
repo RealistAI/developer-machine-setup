@@ -1,5 +1,5 @@
 " Plugins will be downloaded under the specified directory.
-call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+call plug#begin('~/.vim/bundle')
 
 " Declare the list of plugins.
  Plug 'dracula/vim'
