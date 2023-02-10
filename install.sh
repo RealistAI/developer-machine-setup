@@ -48,11 +48,5 @@ echo "# Executing CocInstall to install all the plugins     #"
 echo "#######################################################"
 
 # Install all of the COC requirements
-nvim -es -u ~/.config/nvim/init.vim -i NONE -c "CocInstall coc-pyright coc-markdownlint" -c "qa"
-
-# Install Terraform Linter
-wget https://github.com/juliosueiras/terraform-lsp/releases/download/v0.0.11-beta2/terraform-lsp_0.0.11-beta2_linux_amd64.tar.gz
-tar -xvf terraform-lsp_0.0.11-beta2_linux_amd64.tar.gz
-sudo mv terraform-lsp /usr/local/bin/
-
+nvim -es -u ~/.config/nvim/init.vim -i NONE -c "CocInstall coc-pyright" -c "qa"
 

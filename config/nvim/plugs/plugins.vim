@@ -11,19 +11,19 @@ call plug#begin('~/.vim/bundle')
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
-" Plug 'ryanoasis/vim-devicons'
-" Plug 'tell-k/vim-autopep8'
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'tell-k/vim-autopep8'
 "
 " " Markdown
-" Plug 'godlygeek/tabular'
-" Plug 'plasticboy/vim-markdown'
-" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+ Plug 'godlygeek/tabular'
+ Plug 'plasticboy/vim-markdown'
+ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
  
  " Terraform
-" Plug 'hashivim/vim-terraform'
-" Plug 'vim-syntastic/syntastic'
-" Plug 'juliosueiras/vim-terraform-completion'
-" Plug 'sheerun/vim-polyglot'
+ Plug 'hashivim/vim-terraform'
+ Plug 'vim-syntastic/syntastic'
+ Plug 'juliosueiras/vim-terraform-completion'
+ Plug 'sheerun/vim-polyglot'
  " Python
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'zchee/deoplete-jedi'
