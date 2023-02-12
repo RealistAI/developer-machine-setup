@@ -17,6 +17,7 @@ if [ ! -d /usr/bin/nvim ]; then
     sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
     
     # Install all of the required packages for packer
+    nvim --headless -c 'quitall'
     nvim --headless -c '' -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
     echo "==============================================================================="
     echo "= Done!                                                                       ="
