@@ -20,7 +20,7 @@ require "lsp.lsp"
 -- Automatically run PackerSync if the packer file changes.
 local group = vim.api.nvim_create_augroup("packer_user_config", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePost", {
-	command = "source <afile> | PackerSync",
+	command = "luafile <afile> | PackerSync",
 	pattern = "packer.lua", -- the name of your plugins file
 	group = group,
 })
