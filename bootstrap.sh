@@ -2,7 +2,7 @@
 # This code is intended to bootstrap your development envioronment.
 # It will create all the required directories and insatll all the 
 # required dependencies
-GIT_HOME := $(HOME)/git/
+GIT_HOME="$(HOME)/git/"
 index_main() {
 
 	# Create all the required directories
