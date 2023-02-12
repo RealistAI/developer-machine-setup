@@ -7,13 +7,14 @@ vim.g.maplocalleader = ' '
 require "globals.options"
 require "globals.remaps"
 
--- See ./lua/lsp
-require "lsp.lsp"
-
 -- See ./lua/plugins
 require "plugins.packer-config"
 require "plugins.telescope-config"
 require "plugins.gruvbox-config"
+
+-- See ./lua/lsp
+require "lsp.lsp"
+
 
 
 -- Automatically run PackerSync if the packer file changes.

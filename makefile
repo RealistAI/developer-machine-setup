@@ -1,5 +1,7 @@
-bootstrap: pyenv pipenv nvim
+bootstrap: link pyenv pipenv nvim
 
+link:
+	./install_scripts/setup_links.sh
 pyenv:
 	./install_scripts/install_pyenv.sh
 

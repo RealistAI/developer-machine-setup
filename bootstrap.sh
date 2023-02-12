@@ -2,9 +2,8 @@
 # This code is intended to bootstrap your development envioronment.
 # It will create all the required directories and insatll all the 
 # required dependencies
-GIT_HOME="$(HOME)/git/"
 index_main() {
-
+        GIT_HOME="$HOME/git/"
 	# Create all the required directories
 	mkdir -p $GIT_HOME
 	# Install git

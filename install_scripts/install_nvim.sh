@@ -4,6 +4,9 @@ if [ ! -d /usr/bin/nvim ]; then
     echo "==============================================================================="
     echo "= Installing Neovim                                                           ="
     echo "==============================================================================="
+    # Remove neovim if it was installed by apt
+    sudo apt -qq remove -y neovim
+    # Install Neovim
     curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
     chmod u+x nvim.appimage
     ./nvim.appimage --appimage-extract
@@ -12,6 +15,9 @@ if [ ! -d /usr/bin/nvim ]; then
     # Make it visible globally
     sudo mv squashfs-root /
     sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+    
+    # Install all of the required packages for packer
+    nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
     nvim
     echo "==============================================================================="
     echo "= Done!                                                                       ="
@@ -23,22 +29,6 @@ else
     echo "==============================================================================="
 fi
 
-
-if [ ! -d $HOME/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
-    echo "==============================================================================="
-    echo "= Installing Packer                                                           ="
-    echo "==============================================================================="
-    # Download Packer
-    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-     ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-    echo "==============================================================================="
-    echo "= Done!                                                                       ="
-    echo "==============================================================================="
-else
-    echo "==============================================================================="
-    echo "= Packer is already installed.                                                ="
-    echo "==============================================================================="
-fi
 
 echo "==============================================================================="
 echo "= Installing python-lsp-server                                                ="

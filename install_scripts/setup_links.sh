@@ -14,7 +14,7 @@ if [[ $MOVE_CONFIG ]]; then
 fi
 
 # Create a symlink from our git repo to ~/.config
-ln -sv ~/git/config_manager/xdg_config/ ~/.config
+ln -sv ~/git/developer-machine-setup/xdg_config/ ~/.config
 
 # Move the backed up configs back
 if [[ $MOVE_CONFIG ]]; then
