@@ -1,9 +1,14 @@
+bootstrap: pyenv pipenv nvim
+	echo "All done!"
+
 pyenv:
-	curl https://pyenv.run | bash
+	echo "Installing pyenv"
+	./install_scripts/install_pyenv.sh
+	echo "Done installing pyenv"
 
 pipenv:
-	git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
-	echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-	echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
-	exec bash
+	echo "Installing pipenv"
+	./install_scripts/install_pipenv.sh
+	echo "Done!"
+
+
