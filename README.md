@@ -2,10 +2,9 @@ This tool assumes that you already have Nvim installed on your machine. It will 
 
 Run
 ```
-sh bootstrap.sh
+curl https://raw.githubusercontent.com/RealistAI/developer-machine-setup/master/bootstrap.sh | bash
 ```
 Then run
 ```
-curl https://raw.githubusercontent.com/RealistAI/developer-machine-setup/master/bootstrap.sh | bash
+sh bootstrap.sh
 ```
-
