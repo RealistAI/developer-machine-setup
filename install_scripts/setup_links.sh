@@ -15,6 +15,7 @@ fi
 
 # Create a symlink from our git repo to ~/.config
 ln -sv ~/git/developer-machine-setup/xdg_config/ ~/.config
+ln -sv ~/git/developer-machine-setup/.zprofile ~/.zprofile
 
 # Move the backed up configs back
 if [[ $MOVE_CONFIG ]]; then
