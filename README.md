@@ -2,6 +2,7 @@ This tool assumes that you already have Nvim installed on your machine. It will 
 
 Run
 ```
+sudo apt-get update
 sudo apt-get -y install make
 curl https://raw.githubusercontent.com/RealistAI/developer-machine-setup/master/bootstrap.sh | bash
 ```
